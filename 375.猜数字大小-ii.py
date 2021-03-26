@@ -11,7 +11,7 @@ class Solution:
         for j in range(n):
             for i in range(j-1, -1, -1):
                 dp[i][j] = min(max(dp[i][k-1], dp[k+1][j])+k+1 for k in range(i, j))
-        return dp[0][-1]
+        return dp[0][-1] 
 
 # @lc code=end
 #%%
